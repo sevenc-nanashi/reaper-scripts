@@ -6,3 +6,50 @@ lockfile_version = 3
 version = "1.2.6"
 backend = "gem:reapack-index"
 specifiers = ["latest"]
+
+[[tools.pandoc]]
+version = "3.12.1"
+backend = "github:jgm/pandoc"
+specifiers = ["latest"]
+
+[tools.pandoc."platforms.linux-arm64"]
+checksum = "sha256:445d96fd08801fe636cab1158b4f017ee320ac3b7446328b4fe2f902117b19b9"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377502"
+provenance = "github-attestations"
+
+[tools.pandoc."platforms.linux-arm64-musl"]
+checksum = "sha256:445d96fd08801fe636cab1158b4f017ee320ac3b7446328b4fe2f902117b19b9"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377502"
+provenance = "github-attestations"
+
+[tools.pandoc."platforms.linux-x64"]
+checksum = "sha256:d0c90410e90204c9ca83b8539fac5c7aed01fd537207e4585849f8abc5df20b8"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377440"
+provenance = "github-attestations"
+
+[tools.pandoc."platforms.linux-x64-musl"]
+checksum = "sha256:d0c90410e90204c9ca83b8539fac5c7aed01fd537207e4585849f8abc5df20b8"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377440"
+provenance = "github-attestations"
+
+[tools.pandoc."platforms.macos-arm64"]
+checksum = "sha256:c2146cf33a583f3ac93eccddf1bb662371d5cfcce1aad1c87ad860cca1435d46"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-arm64-macOS.zip"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377370"
+provenance = "github-attestations"
+
+[tools.pandoc."platforms.macos-x64"]
+checksum = "sha256:81ed3e2cfecf096df15d407152f89a684fd65221082b919963f738e977fad3bc"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-x86_64-macOS.zip"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377772"
+provenance = "github-attestations"
+
+[tools.pandoc."platforms.windows-x64"]
+checksum = "sha256:6ef431cb20b2c24a0371fc19200dc49d452be54b1b5c9239f3462841ef53e587"
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/620377641"
+provenance = "github-attestations"

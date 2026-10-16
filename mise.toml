@@ -1,2 +1,12 @@
 [tools]
 "gem:reapack-index" = "latest"
+pandoc = "latest"
+
+[tasks.check]
+description = "Validate ReaPack package metadata"
+run = "reapack-index --check"
+
+[tasks.index]
+description = "Generate the ReaPack index from committed scripts"
+depends = ["check"]
+run = "reapack-index"
